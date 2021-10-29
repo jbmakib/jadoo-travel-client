@@ -22,7 +22,9 @@ const Service = ({
                         </small>
                         <small className="ps-3">
                             <i className="far fa-clock text-orange"></i>
-                            <span className="text-muted ps-1">{duration}</span>
+                            <span className="text-muted ps-1">
+                                {duration} {duration > 1 ? "days" : "day"}
+                            </span>
                         </small>
                     </div>
                     <div className="pt-3 fw-bold card-title h5">{name}</div>

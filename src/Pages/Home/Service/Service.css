@@ -16,3 +16,8 @@
     background-color: var(--orange);
     color: #fff;
 }
+.card-img-top {
+    height: 180px;
+    width: 260px;
+    object-fit: cover;
+}
