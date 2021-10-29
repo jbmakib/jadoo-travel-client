@@ -1,4 +1,5 @@
 import React from "react";
+import NavItem from "../NavItem/NavItem";
 
 const Header = () => {
     return (
@@ -30,36 +31,9 @@ const Header = () => {
                         mb-2 mb-lg-0
                     "
                     >
-                        <li className="nav-item ms-4">
-                            <a
-                                className="nav-link active"
-                                aria-current="page"
-                                href="/"
-                            >
-                                Destinations
-                            </a>
-                        </li>
-                        <li className="nav-item ms-4">
-                            <a className="nav-link active" href="/">
-                                Hotels
-                            </a>
-                        </li>
-                        <li className="nav-item ms-4">
-                            <a className="nav-link active" href="/">
-                                Flights
-                            </a>
-                        </li>
-                        <li className="nav-item ms-4">
-                            <a className="nav-link active" href="/">
-                                Bookings
-                            </a>
-                        </li>
-                        <li className="nav-item ms-4">
-                            <a className="nav-link active" href="/">
-                                Login
-                            </a>
-                        </li>
-                        <li className="nav-item ms-4">
+                        <NavItem href="/">Home</NavItem>
+                        <NavItem href="/login">Login</NavItem>
+                        {/* <li className="nav-item ms-4">
                             <a
                                 className="
                                 nav-link
@@ -74,7 +48,7 @@ const Header = () => {
                             >
                                 Sign up
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
