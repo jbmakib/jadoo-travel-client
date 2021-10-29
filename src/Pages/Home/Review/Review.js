@@ -7,21 +7,14 @@ const Review = () => {
         <div className="review">
             <div className="container py-5">
                 <h1 className="text-center">Review</h1>
-                <div
-                    className="row row-cols-1 row-cols-md-2 align-items-center"
-                    style={{ height: "400px" }}
-                >
+                <div className="row row-cols-1 row-cols-md-2 align-items-center review-section-show">
                     <div>
                         <h1 className="h1-before">What people say about Us.</h1>
                     </div>
                     <div>
                         <div
                             id="carouselExampleIndicators"
-                            className="
-                                    carousel carousel-dark carousel-fade
-                                    w-100
-                                    h-100
-                                "
+                            className="carousel carousel-dark carousel-fade w-100 h-100"
                             data-bs-ride="carousel"
                         >
                             <div className="carousel-indicators m-0 mx-auto">
@@ -46,21 +39,8 @@ const Review = () => {
                                     aria-label="Slide 3"
                                 ></button>
                             </div>
-                            <div
-                                className="
-                                        carousel-inner
-                                        overflow-visible
-                                        d-flex
-                                    "
-                            >
-                                <div
-                                    className="
-                                            carousel-item
-                                            active
-                                            w-90
-                                            mx-auto
-                                        "
-                                >
+                            <div className="carousel-inner overflow-visible d-flex">
+                                <div className="carousel-item active w-90 mx-auto">
                                     <CarouselCard
                                         img="https://jbmakib.github.io/travel-site-bootstrap/images/model/ratings-model-1.jpg"
                                         author="Mike Taylor"

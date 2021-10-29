@@ -9,6 +9,9 @@
     font-size: 20px;
     color: #999999;
 }
+.review-section-show {
+    height: 400px;
+}
 .w-90 {
     width: 90%;
 }
