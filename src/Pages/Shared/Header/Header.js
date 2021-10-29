@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import NavItem from "../NavItem/NavItem";
 
@@ -7,13 +8,13 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-white">
             <div className="container">
-                <a className="navbar-brand" href="/">
+                <NavLink className="navbar-brand" to="/">
                     <img
                         src="https://jbmakib.github.io/travel-site-bootstrap/images/logo.png"
                         alt=""
                         width="150px"
                     />
-                </a>
+                </NavLink>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -40,6 +41,13 @@ const Header = () => {
                         <NavItem href="/">Home</NavItem>
                         {user.accessToken ? (
                             <>
+                                <NavItem href="/my-orders">My Orders</NavItem>
+                                <NavItem href="/manage-orders">
+                                    Manage Orders
+                                </NavItem>
+                                <NavItem href="/add-service">
+                                    Add Service
+                                </NavItem>
                                 <span className="fw-bold">
                                     {user.displayName}
                                 </span>

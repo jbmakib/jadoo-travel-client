@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NavItem = ({ children, href }) => {
     return (
-        <li className="nav-item ms-4">
+        <li className="nav-item mx-2">
             <NavLink
                 className="nav-link"
                 activeClassName="active"
