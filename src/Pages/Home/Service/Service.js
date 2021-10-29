@@ -5,7 +5,7 @@ const Service = ({
     service: { name, img, price, features, duration, ratings },
 }) => {
     return (
-        <div className="col">
+        <div className="col service">
             <div className="h-100 rounded-4 overflow-hidden card">
                 <img
                     className="card-img-top border-bottom border-4 border-orange"
