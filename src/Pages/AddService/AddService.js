@@ -13,7 +13,7 @@ const AddService = () => {
 
         // send data to server
         axios
-            .post("http://localhost:5000/services", service)
+            .post("https://ancient-brook-62418.herokuapp.com/services", service)
             .then((res) => {
                 if (res.data.insertedId) {
                     alert("Service added successfully");
