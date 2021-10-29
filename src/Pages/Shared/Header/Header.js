@@ -1,7 +1,9 @@
 import React from "react";
+import useAuth from "../../../hooks/useAuth";
 import NavItem from "../NavItem/NavItem";
 
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
@@ -32,23 +34,21 @@ const Header = () => {
                     "
                     >
                         <NavItem href="/">Home</NavItem>
-                        <NavItem href="/login">Login</NavItem>
-                        {/* <li className="nav-item ms-4">
-                            <a
-                                className="
-                                nav-link
-                                border
-                                rounded-pill
-                                px-4
-                                border-dark border-2
-                                active
-                                hover-bg-dark
-                            "
-                                href="/"
-                            >
-                                Sign up
-                            </a>
-                        </li> */}
+                        {user.accessToken ? (
+                            <>
+                                <span className="fw-bold">
+                                    {user.displayName}
+                                </span>
+                                <button
+                                    className="btn btn-outline-dark rounded-pill border-2 ms-2"
+                                    onClick={logOut}
+                                >
+                                    LogOut
+                                </button>
+                            </>
+                        ) : (
+                            <NavItem href="/login">Login</NavItem>
+                        )}
                     </ul>
                 </div>
             </div>
