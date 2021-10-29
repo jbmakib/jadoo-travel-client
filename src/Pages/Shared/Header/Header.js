@@ -5,7 +5,7 @@ import NavItem from "../NavItem/NavItem";
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-white">
             <div className="container">
                 <a className="navbar-brand" href="/">
                     <img src="images/logo.png" alt="" width="150px" />
