@@ -1,0 +1,6 @@
+:root {
+    --orange: #f37335;
+}
+.border-orange {
+    border-color: var(--orange) !important;
+}
