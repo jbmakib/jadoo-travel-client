@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselCard from "../CarouselCard/CarouselCard";
 import "./Review.css";
 
 const Review = () => {
@@ -60,114 +61,40 @@ const Review = () => {
                                             mx-auto
                                         "
                                 >
-                                    <div className="card">
-                                        <div className="position-relative">
-                                            <span
-                                                className="
-                                                        position-absolute
-                                                        top-0
-                                                        start-0
-                                                        translate-middle
-                                                    "
-                                            >
-                                                <img
-                                                    src="https://jbmakib.github.io/travel-site-bootstrap/images/model/ratings-model-1.jpg"
-                                                    className="rounded-circle"
-                                                    width="50"
-                                                    height="50"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <div className="card-body">
-                                                <p className="mb-3">
-                                                    "On the windows talking
-                                                    painted pasture yet its
-                                                    express parties use. Sure
-                                                    last upon he same as knew
-                                                    next. Of believed or
-                                                    diverted no."
-                                                </p>
-                                                <p className="h5">
-                                                    Mike Taylor
-                                                </p>
-                                                <p className="mb-0">
-                                                    Lahore, Pakistan
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <CarouselCard
+                                        img="https://jbmakib.github.io/travel-site-bootstrap/images/model/ratings-model-1.jpg"
+                                        author="Mike Taylor"
+                                        location="Lahore, Pakistan"
+                                    >
+                                        "On the windows talking painted pasture
+                                        yet its express parties use. Sure last
+                                        upon he same as knew next. Of believed
+                                        or diverted no."
+                                    </CarouselCard>
                                 </div>
                                 <div className="carousel-item w-90 mx-auto">
-                                    <div className="card">
-                                        <div className="position-relative">
-                                            <span
-                                                className="
-                                                        position-absolute
-                                                        top-0
-                                                        start-0
-                                                        translate-middle
-                                                    "
-                                            >
-                                                <img
-                                                    src="https://jbmakib.github.io/travel-site-bootstrap/images/model/ratings-model-2.jpg"
-                                                    className="rounded-circle"
-                                                    width="50"
-                                                    height="50"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <div className="card-body">
-                                                <p className="mb-3">
-                                                    "Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Eum tenetur quas
-                                                    fugiat laudantium voluptas
-                                                    dolore, sunt debitis
-                                                    possimus."
-                                                </p>
-                                                <p className="h5">Mike br.</p>
-                                                <p className="mb-0">
-                                                    Bristol, UK
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <CarouselCard
+                                        img="https://jbmakib.github.io/travel-site-bootstrap/images/model/ratings-model-2.jpg"
+                                        author="Mike br."
+                                        location="Bristol, UK"
+                                    >
+                                        "On the windows talking painted pasture
+                                        yet its express parties use. Sure last
+                                        upon he same as knew next. Of believed
+                                        or diverted no."
+                                    </CarouselCard>
                                 </div>
                                 <div className="carousel-item w-90 mx-auto">
-                                    <div className="card">
-                                        <div className="position-relative">
-                                            <span
-                                                className="
-                                                        position-absolute
-                                                        top-0
-                                                        start-0
-                                                        translate-middle
-                                                    "
-                                            >
-                                                <img
-                                                    src="https://jbmakib.github.io/travel-site-bootstrap/images/model/ratings-model-3.jpg"
-                                                    className="rounded-circle"
-                                                    width="50"
-                                                    height="50"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <div className="card-body">
-                                                <p className="mb-3">
-                                                    "Lorem ipsum dolor sit amet
-                                                    consectetur, adipisicing
-                                                    elit. Quasi consequuntur
-                                                    fuga maxime officia rem.
-                                                    Placeat esse natus minima
-                                                    corrup."
-                                                </p>
-                                                <p className="h5">M. Jawad</p>
-                                                <p className="mb-0">
-                                                    Istanbul, Turkey
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <CarouselCard
+                                        img="https://jbmakib.github.io/travel-site-bootstrap/images/model/ratings-model-3.jpg"
+                                        author="M. Jawad"
+                                        location="Istanbul, Turkey"
+                                    >
+                                        "On the windows talking painted pasture
+                                        yet its express parties use. Sure last
+                                        upon he same as knew next. Of believed
+                                        or diverted no."
+                                    </CarouselCard>
                                 </div>
                             </div>
                         </div>
