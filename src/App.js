@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./contexts/AuthProvider";
+import AddService from "./Pages/AddService/AddService";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
 import MyOrders from "./Pages/MyOrders/MyOrders/MyOrders";
@@ -25,6 +26,9 @@ function App() {
                     </Route>
                     <PrivateRoute path="/my-orders">
                         <MyOrders></MyOrders>
+                    </PrivateRoute>
+                    <PrivateRoute path="/add-service">
+                        <AddService></AddService>
                     </PrivateRoute>
                     <Route path="*">
                         <h2>Page not found</h2>
