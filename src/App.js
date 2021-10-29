@@ -3,6 +3,7 @@ import "./App.css";
 import AuthProvider from "./contexts/AuthProvider";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
+import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                         <h2>Page not found</h2>
                     </Route>
                 </Switch>
+                <Footer></Footer>
             </Router>
         </AuthProvider>
     );
