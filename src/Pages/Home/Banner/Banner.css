@@ -1,0 +1,21 @@
+.banner {
+    background-image: url("https://jbmakib.github.io/travel-site-bootstrap/images/bg/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-lightred {
+    color: #e06951;
+}
+
+@media only screen and (min-width: 993px) {
+    .banner h1 {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .banner h1 {
+        font-size: 45px;
+    }
+}
