@@ -2,11 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import NavItem from "../NavItem/NavItem";
+import "./Header.css";
 
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+        <nav className="navbar header navbar-expand-lg navbar-light sticky-top bg-white">
             <div className="container">
                 <NavLink className="navbar-brand" to="/">
                     <img
