@@ -5,6 +5,7 @@ import AddService from "./Pages/AddService/AddService";
 import BookService from "./Pages/BookService/BookService";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
+import ManageOrders from "./Pages/ManageOrders/ManageOrders/ManageOrders";
 import MyOrders from "./Pages/MyOrders/MyOrders/MyOrders";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
@@ -30,6 +31,9 @@ function App() {
                     </PrivateRoute>
                     <PrivateRoute path="/add-service">
                         <AddService></AddService>
+                    </PrivateRoute>
+                    <PrivateRoute path="/manage-orders">
+                        <ManageOrders></ManageOrders>
                     </PrivateRoute>
                     <PrivateRoute path="/book-service/:serviceId">
                         <BookService></BookService>
