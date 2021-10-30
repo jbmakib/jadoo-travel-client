@@ -12,7 +12,7 @@ const BookService = () => {
     const [error, setError] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:5000/service/${serviceId}`)
+        fetch(`https://ancient-brook-62418.herokuapp.com/service/${serviceId}`)
             .then((res) => res.json())
             .then((data) => setService(data))
             .catch((err) => setError("Invalid Request to server"));
@@ -28,14 +28,16 @@ const BookService = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
+        const issued = new Date().toISOString().split("T")[0];
         const order = data;
         order.price = parseFloat(order.price);
         order.status = "Pending";
         order.service = service;
+        order.issued = issued;
 
         // send data to server
         axios
-            .post("http://localhost:5000/order", order)
+            .post("https://ancient-brook-62418.herokuapp.com/order", order)
             .then((res) => {
                 if (res.data.insertedId) {
                     alert("order added successfully\nWait for approve");

@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://ancient-brook-62418.herokuapp.com/orders/${user.email}`)
             .then((res) => res.json())
             .then((data) => setMyOrders(data))
             .catch((err) => console.log(err.message));
@@ -22,7 +22,7 @@ const MyOrders = () => {
                 <thead>
                     <tr>
                         <th scope="col">Tour Name</th>
-                        <th scope="col">Starts</th>
+                        <th scope="col">Tour Starts</th>
                         <th scope="col">Status</th>
                     </tr>
                 </thead>
