@@ -16,7 +16,7 @@ const ManageOrder = ({
     const handleChange = (e) => {
         const status = e.target.value;
         axios
-            .put(`http://localhost:5000/order/${_id}`, { status })
+            .put(`https://ancient-brook-62418.herokuapp.com/order/${_id}`, { status })
             .then((res) => {
                 if (res.data.result.modifiedCount) {
                     alert("Status updated successfully\nUpdating UI");

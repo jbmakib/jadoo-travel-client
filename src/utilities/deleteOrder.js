@@ -1,7 +1,7 @@
 const deleteOrder = (id, state, setState) => {
     const proceed = window.confirm("Are you sure, you want to delete?");
     if (proceed) {
-        fetch(`http://localhost:5000/order/${id}`, {
+        fetch(`https://ancient-brook-62418.herokuapp.com/order/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
