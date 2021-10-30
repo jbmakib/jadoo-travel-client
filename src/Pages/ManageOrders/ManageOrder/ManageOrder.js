@@ -1,8 +1,9 @@
 import axios from "axios";
 import React from "react";
+import deleteOrder from "../../../utilities/deleteOrder";
 
 const ManageOrder = ({
-    setAllOrders,
+    action: { allOrders, setAllOrders },
     order: {
         _id,
         name,
@@ -24,6 +25,11 @@ const ManageOrder = ({
             })
             .catch((err) => console.log(err.message));
     };
+
+    // delete order
+    const handleDeleteOrder = () => {
+        deleteOrder(_id, allOrders, setAllOrders);
+    };
     return (
         <tr>
             <td>{name}</td>
@@ -37,6 +43,14 @@ const ManageOrder = ({
                     <option value="Pending">Pending</option>
                     <option value="Approve">Approve</option>
                 </select>
+            </td>
+            <td>
+                <button
+                    className="btn btn-outline-danger"
+                    onClick={handleDeleteOrder}
+                >
+                    Delete
+                </button>
             </td>
         </tr>
     );

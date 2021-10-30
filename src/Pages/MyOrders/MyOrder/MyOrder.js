@@ -1,4 +1,5 @@
 import React from "react";
+import deleteOrder from "../../../utilities/deleteOrder";
 
 const MyOrder = ({
     order: {
@@ -10,22 +11,7 @@ const MyOrder = ({
     action: { myOrders, setMyOrders },
 }) => {
     const handleDeleteOrder = () => {
-        const proceed = window.confirm("Are you sure, you want to delete?");
-        if (proceed) {
-            fetch(`http://localhost:5000/order/${_id}`, {
-                method: "DELETE",
-            })
-                .then((res) => res.json())
-                .then((data) => {
-                    if (data.deletedCount > 0) {
-                        alert("deleted successfully");
-                        const remainingUsers = myOrders.filter(
-                            (user) => user._id !== _id
-                        );
-                        setMyOrders(remainingUsers);
-                    }
-                });
-        }
+        deleteOrder(_id, myOrders, setMyOrders);
     };
     return (
         <tr>

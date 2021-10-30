@@ -33,7 +33,7 @@ const ManageOrders = () => {
                         <ManageOrder
                             key={order._id}
                             order={order}
-                            setAllOrders={setAllOrders}
+                            action={{ allOrders, setAllOrders }}
                         />
                     ))}
                 </tbody>
