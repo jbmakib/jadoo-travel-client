@@ -27,9 +27,17 @@ const MyOrders = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {myOrders.map((order) => (
-                        <MyOrder key={order._id} order={order} />
-                    ))}
+                    {myOrders.length === 0 ? (
+                        <tr>
+                            <td colSpan="3" className="text-center fw-bold">
+                                No orders yet
+                            </td>
+                        </tr>
+                    ) : (
+                        myOrders.map((order) => (
+                            <MyOrder key={order._id} order={order} />
+                        ))
+                    )}
                 </tbody>
             </table>
         </div>
