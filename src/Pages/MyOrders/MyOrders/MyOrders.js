@@ -24,6 +24,7 @@ const MyOrders = () => {
                         <th scope="col">Tour Name</th>
                         <th scope="col">Tour Starts</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,7 +36,11 @@ const MyOrders = () => {
                         </tr>
                     ) : (
                         myOrders.map((order) => (
-                            <MyOrder key={order._id} order={order} />
+                            <MyOrder
+                                key={order._id}
+                                order={order}
+                                action={{ myOrders, setMyOrders }}
+                            />
                         ))
                     )}
                 </tbody>
