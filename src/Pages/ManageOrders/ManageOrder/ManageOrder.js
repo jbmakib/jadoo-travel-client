@@ -1,6 +1,8 @@
+import axios from "axios";
 import React from "react";
 
 const ManageOrder = ({
+    setAllOrders,
     order: {
         _id,
         name,
@@ -11,7 +13,16 @@ const ManageOrder = ({
     },
 }) => {
     const handleChange = (e) => {
-        console.log(_id, e.target.value);
+        const status = e.target.value;
+        axios
+            .put(`http://localhost:5000/order/${_id}`, { status })
+            .then((res) => {
+                if (res.data.result.modifiedCount) {
+                    alert("Status updated successfully\nUpdating UI");
+                    setAllOrders(res.data.orders);
+                }
+            })
+            .catch((err) => console.log(err.message));
     };
     return (
         <tr>

@@ -24,12 +24,17 @@ const ManageOrders = () => {
                         <th scope="col">Date Issued</th>
                         <th scope="col">Tour Starts</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Update Status</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     {allOrders.map((order) => (
-                        <ManageOrder key={order._id} order={order} />
+                        <ManageOrder
+                            key={order._id}
+                            order={order}
+                            setAllOrders={setAllOrders}
+                        />
                     ))}
                 </tbody>
             </table>
