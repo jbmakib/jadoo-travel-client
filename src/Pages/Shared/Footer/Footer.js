@@ -1,4 +1,6 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
+import "./Footer.css";
 
 const Footer = () => {
     return (
@@ -17,27 +19,23 @@ const Footer = () => {
                             longer
                         </small>
                     </div>
-                    <div className="col-lg-6 row">
-                        <div className="col-lg-6">
-                            <h6 className="fw-bold">Company</h6>
-                            <br />
-                            <p>About</p>
-                            <p>Carrer</p>
-                            <p>Mobile</p>
-                        </div>
-                        <div className="col-lg-6">
-                            <h6 className="fw-bold">Contact</h6>
-                            <br />
-                            <p>Help/FAQ</p>
-                            <p>Press</p>
-                            <p>Affiliates</p>
-                        </div>
+                    <div className="col-lg-3">
+                        <p className="fw-bold">Company</p>
+                        <HashLink to="/home#services" className="footer-link">
+                            <p>Services</p>
+                        </HashLink>
+                        <HashLink to="/home#review" className="footer-link">
+                            <p>Review</p>
+                        </HashLink>
+                        <HashLink to="/home#about-us" className="footer-link">
+                            <p>About Us</p>
+                        </HashLink>
                     </div>
                     <div className="col-lg-3">
-                        <p>Discover Our App</p>
+                        <p className="fw-bold">Discover Our App</p>
                         <div className="d-flex justify-content-between">
                             <a
-                                className="btn btn-dark"
+                                className="btn btn-outline-orange"
                                 href="https://play.google.com/"
                                 target="_blank"
                                 rel="noreferrer"
@@ -45,7 +43,7 @@ const Footer = () => {
                                 Google Play
                             </a>
                             <a
-                                className="btn btn-dark"
+                                className="btn btn-outline-orange"
                                 href="https://www.apple.com/app-store/"
                                 target="_blank"
                                 rel="noreferrer"
@@ -53,6 +51,14 @@ const Footer = () => {
                                 App Store
                             </a>
                         </div>
+                    </div>
+                    <div className="col-lg-3">
+                        <p className="fw-bold">Payment With</p>
+                        <img
+                            src="https://web.programming-hero.com/static/media/ssl-commerce.1d268dce.png"
+                            alt="payment with"
+                            className="w-100"
+                        />
                     </div>
                 </div>
                 <br />
@@ -62,8 +68,9 @@ const Footer = () => {
                         href="https://www.github.com/jbmakib"
                         target="_blank"
                         rel="noreferrer"
-                        className="text-decoration-none"
+                        className="footer-link"
                     >
+                        {" "}
                         Jawad Bin Mobin Akib
                     </a>
                 </p>

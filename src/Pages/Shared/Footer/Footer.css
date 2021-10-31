@@ -1,0 +1,8 @@
+.footer-link {
+    text-decoration: none;
+    color: var(--orange);
+}
+.footer-link:hover {
+    text-decoration: underline;
+    color: var(--orange);
+}

@@ -3,7 +3,7 @@ import "./OurStory.css";
 
 const OurStory = () => {
     return (
-        <div className="container my-3 my-md-0">
+        <div className="container my-3 my-md-0" id="about-us">
             <div className="row row-cols-1 row-cols-md-2 align-items-center">
                 <div className="col">
                     <h2>This is our story</h2>
