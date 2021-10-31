@@ -24,8 +24,8 @@ const Footer = () => {
                         <HashLink to="/home#services" className="footer-link">
                             <p>Services</p>
                         </HashLink>
-                        <HashLink to="/home#review" className="footer-link">
-                            <p>Review</p>
+                        <HashLink to="/home#reviews" className="footer-link">
+                            <p>Reviews</p>
                         </HashLink>
                         <HashLink to="/home#about-us" className="footer-link">
                             <p>About Us</p>

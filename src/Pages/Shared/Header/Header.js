@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import NavHashLink from "../NavHashLink/NavHashLink";
 import NavItem from "../NavItem/NavItem";
 import "./Header.css";
 
@@ -49,18 +50,30 @@ const Header = () => {
                                 <NavItem href="/add-service">
                                     Add Service
                                 </NavItem>
-                                <span className="fw-bold">
-                                    {user.displayName}
-                                </span>
-                                <button
-                                    className="btn btn-outline-dark rounded-pill border-2 ms-2"
-                                    onClick={logOut}
-                                >
-                                    LogOut
-                                </button>
+                                <li>
+                                    <span className="fw-bold">
+                                        {user.displayName}
+                                    </span>
+                                </li>
+                                <li>
+                                    <button
+                                        className="btn btn-outline-dark rounded-pill border-2 ms-2"
+                                        onClick={logOut}
+                                    >
+                                        LogOut
+                                    </button>
+                                </li>
                             </>
                         ) : (
-                            <NavItem href="/login">Login</NavItem>
+                            <>
+                                <NavHashLink href="/home#services">
+                                    Services
+                                </NavHashLink>
+                                <NavHashLink href="/home#reviews">
+                                    Reviews
+                                </NavHashLink>
+                                <NavItem href="/login">Login</NavItem>
+                            </>
                         )}
                     </ul>
                 </div>
