@@ -30,7 +30,7 @@ const MyOrders = () => {
                 <tbody>
                     {myOrders.length === 0 ? (
                         <tr>
-                            <td colSpan="3" className="text-center fw-bold">
+                            <td colSpan="4" className="text-center fw-bold">
                                 No orders yet
                             </td>
                         </tr>

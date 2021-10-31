@@ -29,13 +29,21 @@ const ManageOrders = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {allOrders.map((order) => (
-                        <ManageOrder
-                            key={order._id}
-                            order={order}
-                            action={{ allOrders, setAllOrders }}
-                        />
-                    ))}
+                    {allOrders.length === 0 ? (
+                        <tr>
+                            <td colSpan="7" className="text-center fw-bold">
+                                No orders yet
+                            </td>
+                        </tr>
+                    ) : (
+                        allOrders.map((order) => (
+                            <ManageOrder
+                                key={order._id}
+                                order={order}
+                                action={{ allOrders, setAllOrders }}
+                            />
+                        ))
+                    )}
                 </tbody>
             </table>
         </div>
