@@ -7,12 +7,12 @@
 .text-orange {
     color: var(--orange);
 }
-.service .btn-outline-orange {
+.btn-outline-orange {
     border: 2px solid var(--orange);
     color: var(--orange);
     background-color: transparent;
 }
-.service .btn-outline-orange:hover {
+.btn-outline-orange:hover {
     background-color: var(--orange);
     color: #fff;
 }
