@@ -18,33 +18,35 @@ const MyOrders = () => {
             <h2 className="text-center">
                 All of your orders: {myOrders.length}
             </h2>
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Tour Name</th>
-                        <th scope="col">Tour Starts</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {myOrders.length === 0 ? (
+            <div className="table-responsive">
+                <table className="table">
+                    <thead>
                         <tr>
-                            <td colSpan="4" className="text-center fw-bold">
-                                No orders yet
-                            </td>
+                            <th scope="col">Tour Name</th>
+                            <th scope="col">Tour Starts</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
                         </tr>
-                    ) : (
-                        myOrders.map((order) => (
-                            <MyOrder
-                                key={order._id}
-                                order={order}
-                                action={{ myOrders, setMyOrders }}
-                            />
-                        ))
-                    )}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {myOrders.length === 0 ? (
+                            <tr>
+                                <td colSpan="4" className="text-center fw-bold">
+                                    No orders yet
+                                </td>
+                            </tr>
+                        ) : (
+                            myOrders.map((order) => (
+                                <MyOrder
+                                    key={order._id}
+                                    order={order}
+                                    action={{ myOrders, setMyOrders }}
+                                />
+                            ))
+                        )}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };
