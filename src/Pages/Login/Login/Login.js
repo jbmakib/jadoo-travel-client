@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import googleLogo from "../../../images/google-logo.png";
 import "./Login.css";
 
 const Login = () => {
@@ -23,11 +24,7 @@ const Login = () => {
                 className="btn btn-lg btn-google btn-block text-uppercase btn-outline"
                 onClick={handleGoogleSignIn}
             >
-                <img
-                    src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
-                    alt="Google logo"
-                    width="50px"
-                />
+                <img src={googleLogo} alt="Google logo" width="50px" />
             </button>
             {error ? <div className="text-danger">{error}</div> : ""}
         </div>
