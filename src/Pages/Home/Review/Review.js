@@ -4,7 +4,7 @@ import "./Review.css";
 
 const Review = () => {
     return (
-        <div className="review">
+        <div className="review" id="review">
             <div className="container py-5">
                 <h1 className="text-center">Review</h1>
                 <div className="row row-cols-1 row-cols-md-2 align-items-center review-section-show">

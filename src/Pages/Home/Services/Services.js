@@ -10,7 +10,7 @@ const Services = () => {
             .then((data) => setServices(data));
     }, []);
     return (
-        <div className="container py-5">
+        <div className="container py-5" id="services">
             <h1 className="text-center">Services</h1>
             {services.length === 0 ? (
                 <div className="text-center">
