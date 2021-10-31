@@ -13,10 +13,12 @@ const Login = () => {
     // handle sign in
     const handleGoogleSignIn = () => {
         signInWithGoogle()
-            .then(() => history.push(redirect_URI))
+            .then((res) => history.push(redirect_URI))
             .catch((err) => setError(err.message))
             .finally(() => setIsLoading(false));
     };
+
+    // This element will be returned when user visits login page
     return (
         <div className="container text-center my-5 py-5">
             <h2>Please login Using</h2>

@@ -10,6 +10,7 @@ import MyOrders from "./Pages/MyOrders/MyOrders/MyOrders";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
 import PrivateRoute from "./Pages/Shared/PrivateRoute/PrivateRoute";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
     return (
@@ -39,7 +40,7 @@ function App() {
                         <BookService></BookService>
                     </PrivateRoute>
                     <Route path="*">
-                        <h2>Page not found</h2>
+                        <NotFound></NotFound>
                     </Route>
                 </Switch>
                 <Footer></Footer>

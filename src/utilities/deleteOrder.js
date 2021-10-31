@@ -1,3 +1,4 @@
+// deleteOrder function deletes the order from database
 const deleteOrder = (id, state, setState) => {
     const proceed = window.confirm("Are you sure, you want to delete?");
     if (proceed) {

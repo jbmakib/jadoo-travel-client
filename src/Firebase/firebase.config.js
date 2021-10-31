@@ -1,3 +1,4 @@
+// firebase configuration. To add yours create `.env.local` and add the configuration
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,

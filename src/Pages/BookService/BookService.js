@@ -47,6 +47,7 @@ const BookService = () => {
             .catch((err) => console.log(err.message));
     };
 
+    // if i don't get any id i will wait if i get any error. if i get any error i will show the error or i will show back to home
     if (!service._id) {
         return (
             <div>
@@ -56,7 +57,9 @@ const BookService = () => {
                             {error}
                         </div>
                         <Link to="/">
-                            <div className="text-center">Back to home</div>
+                            <div className="text-center">
+                                &#8592; Back to home
+                            </div>
                         </Link>
                     </>
                 ) : (
@@ -71,6 +74,7 @@ const BookService = () => {
         );
     }
 
+    // if i get the id i will return the component
     return (
         <>
             <div style={bookServiceStyle} className="py-5">
