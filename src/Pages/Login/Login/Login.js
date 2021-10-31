@@ -17,7 +17,7 @@ const Login = () => {
             .finally(() => setIsLoading(false));
     };
     return (
-        <div className="container text-center">
+        <div className="container text-center my-5 py-5">
             <h2>Please login Using</h2>
             <button
                 className="btn btn-lg btn-google btn-block text-uppercase btn-outline"
