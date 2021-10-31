@@ -46,14 +46,11 @@ const Reviews = () => {
                                         author="Mike Taylor"
                                         location="Lahore, Pakistan"
                                     >
-                                        Lisa & the team were very fast and
-                                        efficient in responding to any emails
-                                        and also with updating me with my travel
-                                        itinerary, etc. Loved being able yo book
-                                        everything in the one place, in one
-                                        transaction. I will most definitely be
-                                        using Travel Online for my holiday
-                                        bookings again in the future!
+                                        Loved being able yo book everything in
+                                        the one place, in one transaction. I
+                                        will most definitely be using Travel
+                                        Online for my holiday bookings again in
+                                        the future! Thanks Jadoo Travel
                                     </CarouselCard>
                                 </div>
                                 <div className="carousel-item w-90 mx-auto">
@@ -66,10 +63,7 @@ const Reviews = () => {
                                         I needed to make a few changes that I
                                         felt was not handled well at all. Once I
                                         spoke to the Team Manager, he was
-                                        absolutely amazing. Couldn't do enough
-                                        to sort our issue out. Went way above a
-                                        5 star service. More then happy to use
-                                        snd recommend this company.
+                                        absolutely amazing.
                                     </CarouselCard>
                                 </div>
                                 <div className="carousel-item w-90 mx-auto">
@@ -82,10 +76,7 @@ const Reviews = () => {
                                         holiday going as smooth as we could have
                                         hoped for. Everything was sorted for us,
                                         and all we had to worry about was
-                                        packing our suitcases! The price also
-                                        couldn't be beat, and we even have
-                                        friends and family who are thinking of
-                                        booking their next holiday too :)
+                                        packing our suitcases!
                                     </CarouselCard>
                                 </div>
                             </div>
