@@ -49,14 +49,25 @@ const BookService = () => {
 
     if (!service._id) {
         return (
-            <>
-                <div className="h4 text-center my-5 fw-bold text-orange">
-                    {error}
-                </div>
-                <Link to="/">
-                    <div className="text-center">Back to home</div>
-                </Link>
-            </>
+            <div>
+                {error ? (
+                    <>
+                        <div className="h4 text-center my-5 fw-bold text-orange">
+                            {error}
+                        </div>
+                        <Link to="/">
+                            <div className="text-center">Back to home</div>
+                        </Link>
+                    </>
+                ) : (
+                    <div className="text-center my-5">
+                        <div
+                            className="spinner-border text-orange"
+                            role="status"
+                        ></div>
+                    </div>
+                )}
+            </div>
         );
     }
 
