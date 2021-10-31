@@ -78,39 +78,65 @@ const BookService = () => {
             <div className="container my-3">
                 <h3 className="my-2 text-center">Book Service</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input
-                        {...register("name", { required: true })}
-                        placeholder="Full Name"
-                        value={user.displayName}
-                        readOnly
-                    />
-                    <input
-                        type="email"
-                        {...register("email", { required: true })}
-                        placeholder="Your email"
-                        value={user.email}
-                        readOnly
-                    />
-                    <input
-                        {...register("visaCardNo", { required: true })}
-                        placeholder="Credit card no."
-                    />
-                    <input
-                        type="number"
-                        {...register("price", { required: true })}
-                        placeholder="Have to pay"
-                        value={service.price}
-                        readOnly
-                    />
-                    <label>
-                        Select start time
+                    <div className="form-floating mb-3">
+                        <input
+                            className="form-control"
+                            id="floatingFullName"
+                            placeholder="Full Name"
+                            {...register("name", { required: true })}
+                            value={user.displayName}
+                            readOnly
+                        />
+                        <label htmlFor="floatingFullName">Full Name</label>
+                    </div>
+                    <div className="form-floating mb-3">
+                        <input
+                            type="email"
+                            className="form-control"
+                            id="floatingYourEmail"
+                            placeholder="Your Email"
+                            {...register("email", { required: true })}
+                            value={user.email}
+                            readOnly
+                        />
+                        <label htmlFor="floatingYourEmail">Your Email</label>
+                    </div>
+                    <div className="form-floating mb-3">
+                        <input
+                            className="form-control"
+                            id="floatingCreditCardNo"
+                            placeholder="Credit card no."
+                            {...register("visaCardNo", { required: true })}
+                        />
+                        <label htmlFor="floatingCreditCardNo">
+                            Credit card no.
+                        </label>
+                    </div>
+                    <div className="form-floating mb-3">
+                        <input
+                            type="number"
+                            className="form-control"
+                            id="floatingHaveToPay"
+                            placeholder="Have to pay"
+                            {...register("price", { required: true })}
+                            value={service.price}
+                            readOnly
+                        />
+                        <label htmlFor="floatingHaveToPay">Have to pay</label>
+                    </div>
+                    <div className="form-floating mb-3">
                         <input
                             type="date"
-                            {...register("start", { required: true })}
+                            className="form-control"
+                            id="floatingSelectTimeForGoing"
                             placeholder="Select time for going"
+                            {...register("start", { required: true })}
                         />
-                    </label>
-                    <input type="submit" />
+                        <label htmlFor="floatingSelectTimeForGoing">
+                            Select time for going
+                        </label>
+                    </div>
+                    <input className="btn btn-outline-orange" type="submit" />
                 </form>
             </div>
         </>
