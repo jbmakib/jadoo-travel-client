@@ -1,13 +1,13 @@
 import React from "react";
 import CarouselCard from "../CarouselCard/CarouselCard";
-import "./Review.css";
+import "./Reviews.css";
 
-const Review = () => {
+const Reviews = () => {
     return (
-        <div className="review" id="review">
+        <div className="reviews" id="reviews">
             <div className="container py-5">
-                <h1 className="text-center">Review</h1>
-                <div className="row row-cols-1 row-cols-md-2 align-items-center review-section-show">
+                <h1 className="text-center">Reviews</h1>
+                <div className="row row-cols-1 row-cols-md-2 align-items-center reviews-section-show">
                     <div>
                         <h1 className="h1-before">What people say about Us.</h1>
                     </div>
@@ -85,4 +85,4 @@ const Review = () => {
     );
 };
 
-export default Review;
+export default Reviews;

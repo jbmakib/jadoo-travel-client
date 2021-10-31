@@ -1,15 +1,15 @@
-.review {
+.reviews {
     background-image: url("https://jbmakib.github.io/travel-site-bootstrap/images/bg/review.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.review .h1-before::before {
+.reviews .h1-before::before {
     content: "TESTIMONIAL";
     display: block;
     font-size: 20px;
     color: #999999;
 }
-.review-section-show {
+.reviews-section-show {
     height: 400px;
 }
 .w-90 {
