@@ -16,6 +16,8 @@
 -   You can manage all of the order of the site as a admin. You can approve or decline any order
 -   Font Awesome Icon Pack Used ❤
 -   React Router Used 🔥
+-   Axios Used 🔥
+-   React Hook Form Used
 -   Bootstrap Used
 -   Firebase authentication used
 -   Responsive for all device
