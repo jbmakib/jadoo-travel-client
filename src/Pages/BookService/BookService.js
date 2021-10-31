@@ -75,7 +75,8 @@ const BookService = () => {
                     </h5>
                 </div>
             </div>
-            <div className="container">
+            <div className="container my-3">
+                <h3 className="my-2 text-center">Book Service</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input
                         {...register("name", { required: true })}

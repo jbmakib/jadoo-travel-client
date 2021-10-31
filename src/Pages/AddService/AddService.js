@@ -24,7 +24,7 @@ const AddService = () => {
             .catch((err) => console.log(err.message));
     };
     return (
-        <div className="container">
+        <div className="container my-3">
             <h2 className="text-center">Add a service</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-floating mb-3">

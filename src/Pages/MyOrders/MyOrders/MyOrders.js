@@ -14,7 +14,7 @@ const MyOrders = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
-        <div className="container">
+        <div className="container my-3">
             <h2 className="text-center">
                 All of your orders: {myOrders.length}
             </h2>
