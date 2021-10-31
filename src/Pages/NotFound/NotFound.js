@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // we can see this component when no route found
 const NotFound = () => {
     return (
-        <div className="container my-5 py-5 text-center">
+        <div className="container my-lg-5 py-lg-5 my-md-3 py-md-3 my-1 py-1 text-center">
             <div className="my-3 py-3">
                 <h1>404</h1>
                 <h4>Page Not Found</h4>

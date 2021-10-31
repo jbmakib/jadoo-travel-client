@@ -63,14 +63,13 @@ const Footer = () => {
                 </div>
                 <br />
                 <p className="text-center mb-0">
-                    Copyright 2021 | All right reserved &copy;
+                    Copyright 2021 | All right reserved &copy;{" "}
                     <a
                         href="https://www.github.com/jbmakib"
                         target="_blank"
                         rel="noreferrer"
                         className="footer-link"
                     >
-                        {" "}
                         Jawad Bin Mobin Akib
                     </a>
                 </p>
