@@ -12,11 +12,20 @@ const Services = () => {
     return (
         <div className="container py-5">
             <h1 className="text-center">Services</h1>
-            <div className="g-4 row row-cols-lg-4 row-cols-md-2 row-cols-1">
-                {services.map((service) => (
-                    <Service key={service._id} service={service} />
-                ))}
-            </div>
+            {services.length === 0 ? (
+                <div className="text-center">
+                    <div
+                        className="spinner-border text-orange"
+                        role="status"
+                    ></div>
+                </div>
+            ) : (
+                <div className="g-4 row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                    {services.map((service) => (
+                        <Service key={service._id} service={service} />
+                    ))}
+                </div>
+            )}
         </div>
     );
 };
