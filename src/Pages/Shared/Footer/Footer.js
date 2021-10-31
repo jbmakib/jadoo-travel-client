@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="bg-dark text-white">
             <div className="container py-3">
                 <div className="row">
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 my-lg-0 my-3">
                         <img
                             src="https://jbmakib.github.io/travel-site-bootstrap/images/logo.png"
                             alt=""
@@ -19,7 +19,7 @@ const Footer = () => {
                             longer
                         </small>
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 my-lg-0 my-3">
                         <p className="fw-bold">Company</p>
                         <HashLink to="/home#services" className="footer-link">
                             <p>Services</p>
@@ -31,7 +31,7 @@ const Footer = () => {
                             <p>About Us</p>
                         </HashLink>
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 my-lg-0 my-3">
                         <p className="fw-bold">Discover Our App</p>
                         <div className="d-flex justify-content-between">
                             <a
@@ -52,7 +52,7 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 my-lg-0 my-3">
                         <p className="fw-bold">Payment With</p>
                         <img
                             src="https://web.programming-hero.com/static/media/ssl-commerce.1d268dce.png"
