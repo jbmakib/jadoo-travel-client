@@ -4,7 +4,7 @@
 
 ### A travel related website
 
-##### View Project from here 👉 [Jadoo-Trave](https://jadoo-mern.web.app/)
+##### View Project from here 👉 [Jadoo-Travel](https://jadoo-mern.web.app/)
 
 ## Features
 
