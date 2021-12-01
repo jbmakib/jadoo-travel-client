@@ -9,12 +9,9 @@
 ## Features
 
 -   This app is created by ReactJS
+-   Users can order services and manage them. They can manage others users’ orders and add another service
 -   Used mongoDb as noSQL database for storing data
 -   Used node and express as server for send request from client side to database using server
--   You can add a new service
--   You can see only your order and can manage it
--   You can manage all of the order of the site as a admin. You can approve or decline any order
--   Delete Order Anytime
 -   Font Awesome Icon Pack Used ❤
 -   React Router Used 🔥
 -   Axios Used 🔥
